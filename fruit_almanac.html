@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Fruit Almanac</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/typed.js"></script>
+    <script lang="javascript">
+        let fruitSeq = 0;
+        window.onload = function () {
+            loadFruit(true);
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Wiro Sableng</a>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="status.html">Status</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="testimonials.html">Testimonials</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="fruit_voting.html">Fruit Voting</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="fruit_almanac.html">Fruit Almanac</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container" style="margin-top:20px"></div>
+    <div class="row-sm-4">
+        <div class="col-sm-4 offset-md-4 text-center">
+            <h1>Fruit Almanac</h1>
+            <div>
+                <table class="table">
+                    <tr>
+                        <div class="picture-center">
+                            <td style="background-color: green;" rowspan="4" ; colspan="3"><img id="picture" src=""
+                                    class="fruit-picture rounded-circle w-40 mx-auto d-block card-img-top"></td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td>:</td>
+                        <td><span id="name"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Latin</td>
+                        <td>:</td>
+                        <td><span id="latin"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Color</td>
+                        <td>:</td>
+                        <td><span id="color"></span></td>
+                    </tr>
+                </table>
+                <div class="row">
+                    <div class="col-md-4">
+                        <input type="button" onclick="loadFruit(false)" class="btn btn-block btn-primary" value="previous">
+                    </div>
+                    <div class="col-md-4 offset-md-3">
+                        <input type="button" onclick="loadFruit(true)" class="btn le btn-block btn-success" value="next">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
